@@ -3,12 +3,7 @@ package logica;
 
 import java.io.Serializable;
 
-/**
- *
- * @author Eloy Rodríguez y María Chantal
- */
 
-/** La clase jugador nos permitirá conocer los datos del jugador en una partida*/
 public class Jugador implements Serializable{
     /** Atributo que nos proporciona el nombre del jugador*/
     private String Nombre;
