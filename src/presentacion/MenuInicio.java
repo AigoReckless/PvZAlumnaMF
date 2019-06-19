@@ -7,12 +7,16 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
+import presentacion.IniSesion;
+import presentacion.IniSesion;
+import presentacion.Registro;
+import presentacion.Registro;
 
 
 
 /**
  *
- * @author Eloy calvo
+ * @author Eloy Rodgríguez y María Chantal
  */
 
 /** La clase-interfaz Menu Inicio nos mostrará el primer contacto visual con el juego, donde se podrá
@@ -73,7 +77,7 @@ public class MenuInicio extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(120, 470, 370, 120);
+        jButton1.setBounds(210, 440, 270, 170);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -82,9 +86,9 @@ public class MenuInicio extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(550, 460, 430, 120);
+        jButton2.setBounds(710, 430, 250, 190);
 
-        portadaI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/portada.jpg"))); // NOI18N
+        portadaI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/portada.jpg"))); // NOI18N
         getContentPane().add(portadaI);
         portadaI.setBounds(0, 0, 1090, 730);
 
