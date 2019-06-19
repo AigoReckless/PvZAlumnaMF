@@ -1,4 +1,3 @@
-
 package presentacion;
 
 import logica.LecturaEscritura;
@@ -7,21 +6,9 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
-import presentacion.IniSesion;
-import presentacion.IniSesion;
-import presentacion.Registro;
-import presentacion.Registro;
 
 
 
-/**
- *
- * @author Eloy Rodgríguez y María Chantal
- */
-
-/** La clase-interfaz Menu Inicio nos mostrará el primer contacto visual con el juego, donde se podrá
- * iniciar sesión o registrar un usuario
- */
 public class MenuInicio extends javax.swing.JFrame {
     
     /** Atributo que permitirá leer y registrar los datos del jugador*/

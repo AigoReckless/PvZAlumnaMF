@@ -1,4 +1,3 @@
-
 package presentacion;
 
 import logica.Jugador;
@@ -10,13 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import javax.swing.ImageIcon;
 
-/**
- *
- * @author Eloy Rodríguez y María Chantal
- */
 
-/** La clase-interfaz IniSesión nos permitirá inciar sesión como usuario previaente registrado
- */
 public class IniSesion extends javax.swing.JFrame {
     /** Atributo que relaciona ciertos componentes del inicio con la interfaz*/
     private MenuInicio inicio;

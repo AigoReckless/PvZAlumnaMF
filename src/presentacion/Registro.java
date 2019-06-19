@@ -1,4 +1,3 @@
-
 package presentacion;
 import logica.Jugador;
 import logica.LecturaEscritura;
@@ -10,13 +9,9 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
-/**
- *
- * @author Eloy Rodríguez y María Chantal
- */
 
-/** La clase-interfaz Registro nos permitirá registrarnos como jugadores
-*/
+
+
 public class Registro extends javax.swing.JFrame {
     /** Atributo que permite leer y guardar los datos del jugador */
     private LecturaEscritura lecEscr ;

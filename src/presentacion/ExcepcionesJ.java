@@ -1,16 +1,10 @@
-
 package presentacion;
 
 import java.awt.Image;
 import java.io.Serializable;
 import javax.swing.ImageIcon;
 
-/**
- *
- * @author Eloy Rodríguez y María Chantal
- */
 
-/** La clase-interfaz ExcepcionesJ nos mostrará cuadros de diálogo cuando se presente una excepción en la partida*/
 public class ExcepcionesJ extends javax.swing.JDialog {
 
     /** Constructor de Excepciones

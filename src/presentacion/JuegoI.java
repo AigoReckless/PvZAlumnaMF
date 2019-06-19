@@ -1,4 +1,3 @@
-
 package presentacion;
 
 import logica.Caracubo;
@@ -19,13 +18,7 @@ import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-/**
- *
- * @author Eloy Rodríguez y María Chantal
- */
 
-/** La clase-interfaz JuegoI controlará todo lo necesario para jugar una partida.
-*/
 public class JuegoI extends javax.swing.JFrame {
 
     /** Atributo que pertmite jugar una partida. */

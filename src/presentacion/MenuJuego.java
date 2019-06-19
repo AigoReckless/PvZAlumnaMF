@@ -1,4 +1,3 @@
-
 package presentacion;
 
 import logica.Comandos;
@@ -17,14 +16,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-/**
- *
- * @author Eloy Rodríguez y María Chantal
- */
 
-/** La clase-interfaz Menu Juego nos mostrará el menú princiapl o índice del juego, desde el cual
- * podremos empezar a manejarnos como jugadores
- */
 public class MenuJuego extends javax.swing.JFrame {
     
     /** Atributo que permite iniciar una partida nueva*/
