@@ -1,13 +1,6 @@
-
 package logica;
 
-/**
- *
- * @author Eloy Rodríguez y María Chantal
- */
 
-/** Esta clase controlará el efecto de la planta tipo Nuez dentro de la partida
-*/
 public class Nuez extends Plantas {
 
     /** Constructor de Nuez
