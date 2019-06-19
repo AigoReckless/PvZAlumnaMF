@@ -12,7 +12,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author Eloy Rodgríguez y María Chantal
+ * @author Eloy calvo
  */
 
 /** La clase-interfaz Menu Inicio nos mostrará el primer contacto visual con el juego, donde se podrá
