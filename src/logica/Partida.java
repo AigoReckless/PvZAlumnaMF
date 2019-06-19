@@ -1,16 +1,9 @@
-
 package logica;
 
 import java.io.Serializable;
 
 
 
-/**
- *
- * @author Eloy Rodríguez y María Chantal
- */
-
-/** Esta clase controlará los elementos necesarios para poder llevar a cabo una partida*/
 public class Partida implements Serializable {
     /** Atributo que guarda la cantidad de soles*/
     private int soles;

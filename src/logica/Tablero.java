@@ -1,15 +1,8 @@
-
 package logica;
 
 import java.io.Serializable;
 
-/**
- *
- * @author Eloy Rodríguez y María Chantal
- */
 
-/** La clase Tablero es un array de arrays que almacena los personajes en la partida
- */
 public class Tablero implements Serializable{
     
     /** Atributo que introduce un personaje en el tablero */

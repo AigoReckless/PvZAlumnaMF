@@ -1,20 +1,14 @@
 package logica;
 
-import presentacion.ExcepcionesJ;
 import java.io.Serializable;
 
-/**
- *
- * @author Eloy Rodríguez y María Chantal
- */
 
-/** Controla las posibles excepciones que podemos encontrar en el juego 
-*/
 public class Excepciones implements Serializable {
     
     
     
-    /**Constructor de ExcepcionJuego 
+    /**Constructor de ExcepcionJuego
+     * @param string
      */
     public Excepciones(String string){
     }

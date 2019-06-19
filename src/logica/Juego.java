@@ -1,16 +1,8 @@
-
 package logica;
 
 
 import java.io.Serializable;
 
-/**
- *
- * @author Eloy Rodríguez y María Chantal
- */
-
-/** La clase Juego engloba todos los comandos, excepciones y partidas que habrá al iniciar una partida
-*/
 public class Juego implements Serializable{
     /** Atributo para controlar los comandos introducidos por teclado de la partida*/
     private Comandos comandos;

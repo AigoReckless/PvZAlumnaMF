@@ -1,4 +1,3 @@
-
 package logica;
 
 import java.io.FileInputStream;
@@ -9,12 +8,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.HashMap;
 
-/**
- *
- * @author Eloy Rodríguez y María Chantal
- */
 
-/** La clase LecturaEscritura controlará los datos introducidos sobre el jugador*/
 public class LecturaEscritura {
     
     /** Atributo que controla los jugadores registrados en el juego
