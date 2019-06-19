@@ -42,38 +42,52 @@ public abstract class Plantas extends Objetos {
     public void setAccion(int accion) {
         this.accion = accion;
     }
+    
+    
+    /** Método que permite atacar al LanzaGuistantes
+     * @param p personaje, en este caso el LanzaGuisantes
+     */ 
+    @Override
+    public void Ataque(Objetos p) {
+        p.setResistencia(p.getResistencia()-super.getPuntosAtaque());
+    }
 
-    /**
-     * Método para colocar las plantas en el tablero
-     * @param fila
-     * @param columna
-     * @param partida
+    
+    /** Método que permite plantar LanzaGuisantes
+     * @param x coordenada x dentro del tablero donde se quiere situar 
+     * @param y coordenada y dentro del tablero donde se quiere situar
+     * @param j partida en curso
      */
-    public abstract void colocarPlanta(int fila, int columna, Juego partida);
+    public void colocarPlanta(int x, int y,Juego j) {
+        if (getExcepcion().dentroTablero(x, y, j.getPartida().getTablero().lonX(), j.getPartida().getTablero().lonY()) && getExcepcion().casillaOcupada( j.getPartida().getTablero().getTableroPos(x, y)) && getExcepcion().costePosible(this.getCoste(), j.getPartida().getSoles())){
+            j.getPartida().getTablero().addT(x, y, this);        
+            j.getPartida().setSoles(j.getPartida().getSoles()-getCoste());
+            j.getPartida().setTurno(j.getPartida().getTurno()+1);    
+        }
+    }
+    
+    
+        /**Método que controla el ataque del LanzaGuisantes
+     * @param j partida en curso
+     */
+    @Override
+    public void actua(Juego j) {
+        int salir =0;
+        if (getTurnos() != 0 && getTurnos() % getAccion() ==0){
+            for (int i = super.getX(); i<j.getPartida().getTablero().getTablero()[super.getY()-1].length && salir != 1; i++){
+                
+                    if ( j.getPartida().getTablero().getTableroPos(i+1,super.getY()) instanceof Zombies && !j.getPartida().getTablero().getTableroPos(i+1,super.getY()).borrar()){
+                        Ataque(j.getPartida().getTablero().getTableroPos(i+1,super.getY()) );
+                        salir = 1;
+                    }
+            }
+        }
+    }
+    
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
     public ExcepcionPlanta getExcepcion() {
         return excepcion;
     }

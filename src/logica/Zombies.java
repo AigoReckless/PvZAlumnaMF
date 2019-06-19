@@ -42,7 +42,7 @@ public abstract class Zombies extends Objetos {
     }
     
     /**
-     * Método para 
+     * Método para controlar la acción de los zombies
      * @param juego
      */
     @Override
@@ -58,7 +58,7 @@ public abstract class Zombies extends Objetos {
         }
         else {
             if ((!(juego.getPartida().getTablero().getTableroPos(super.getX() - 1, super.getY() ) instanceof Plantas) || this.getX() == 1) || juego.getPartida().getTablero().getTableroPos(super.getX()-1, super.getY() ).borrar() ){
-                //Ooperador instanceof = conocer si un objeto es de un tipo determinado
+                //Operador instanceof = conocer si un objeto es de un tipo determinado
             } else {
                 Ataque(juego.getPartida().getTablero().getTableroPos(super.getX() - 1, super.getY() ));
             }
