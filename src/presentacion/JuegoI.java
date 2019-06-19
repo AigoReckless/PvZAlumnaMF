@@ -391,27 +391,27 @@ public class JuegoI extends javax.swing.JFrame {
         jLabel16.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel16.setText("- G <columna> <fila> : colocar girasol.");
         ayuda.getContentPane().add(jLabel16);
-        jLabel16.setBounds(180, 120, 320, 17);
+        jLabel16.setBounds(180, 120, 320, 19);
 
         jLabel17.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel17.setText("- L <columna> <fila> : colocar LanzaGuisantes.");
         ayuda.getContentPane().add(jLabel17);
-        jLabel17.setBounds(180, 150, 350, 17);
+        jLabel17.setBounds(180, 150, 350, 19);
 
         jLabel18.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel18.setText("- N <columna> <fila> : colocar una Nuez.");
         ayuda.getContentPane().add(jLabel18);
-        jLabel18.setBounds(180, 180, 340, 17);
+        jLabel18.setBounds(180, 180, 340, 19);
 
         jLabel19.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel19.setText("- P <columna> <fila> : colocar un Petacereza.");
         ayuda.getContentPane().add(jLabel19);
-        jLabel19.setBounds(180, 210, 360, 17);
+        jLabel19.setBounds(180, 210, 360, 19);
 
         jLabel20.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel20.setText("- Pulsa Enviar para pasar turno.");
         ayuda.getContentPane().add(jLabel20);
-        jLabel20.setBounds(180, 240, 340, 17);
+        jLabel20.setBounds(180, 240, 340, 19);
 
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -434,7 +434,7 @@ public class JuegoI extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Bauhaus 93", 1, 24)); // NOI18N
         jLabel7.setText("Normas para jugar a Plantas vs Zombies: ");
         normas.getContentPane().add(jLabel7);
-        jLabel7.setBounds(110, 20, 473, 36);
+        jLabel7.setBounds(110, 20, 475, 32);
 
         jLabel8.setFont(new java.awt.Font("Arial Nova", 0, 14)); // NOI18N
         jLabel8.setText("- Los soles se usan como unidad de dinero. Necesitas soles para comprar Girasoles y LanzaGuisantes.");
@@ -591,275 +591,242 @@ public class JuegoI extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(950, 520));
         jPanel1.setLayout(null);
 
-        c11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c11.setPreferredSize(new java.awt.Dimension(95, 94));
+        c11.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        c11.setPreferredSize(new java.awt.Dimension(80, 100));
         c11.setRequestFocusEnabled(false);
         jPanel1.add(c11);
-        c11.setBounds(20, 22, 94, 93);
+        c11.setBounds(20, 22, 80, 80);
 
-        c12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c12.setPreferredSize(new java.awt.Dimension(95, 94));
+        c12.setPreferredSize(new java.awt.Dimension(80, 100));
         c12.setRequestFocusEnabled(false);
         jPanel1.add(c12);
-        c12.setBounds(20, 121, 94, 93);
+        c12.setBounds(20, 121, 80, 80);
 
-        c13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c13.setPreferredSize(new java.awt.Dimension(95, 94));
+        c13.setPreferredSize(new java.awt.Dimension(80, 100));
         c13.setRequestFocusEnabled(false);
         jPanel1.add(c13);
-        c13.setBounds(20, 220, 94, 93);
+        c13.setBounds(20, 220, 80, 80);
 
-        c14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c14.setPreferredSize(new java.awt.Dimension(95, 94));
         c14.setRequestFocusEnabled(false);
         jPanel1.add(c14);
-        c14.setBounds(20, 319, 94, 93);
+        c14.setBounds(20, 319, 80, 80);
 
-        c15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 102, 0), 1, true));
         c15.setPreferredSize(new java.awt.Dimension(95, 94));
         c15.setRequestFocusEnabled(false);
         jPanel1.add(c15);
-        c15.setBounds(20, 418, 94, 93);
+        c15.setBounds(20, 418, 80, 80);
 
-        c21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c21.setPreferredSize(new java.awt.Dimension(95, 94));
+        c21.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        c21.setPreferredSize(new java.awt.Dimension(80, 100));
         c21.setRequestFocusEnabled(false);
         jPanel1.add(c21);
-        c21.setBounds(120, 22, 94, 93);
+        c21.setBounds(120, 22, 80, 80);
 
-        c31.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c31.setPreferredSize(new java.awt.Dimension(95, 94));
+        c31.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        c31.setPreferredSize(new java.awt.Dimension(80, 100));
         c31.setRequestFocusEnabled(false);
         jPanel1.add(c31);
-        c31.setBounds(220, 22, 94, 93);
+        c31.setBounds(220, 22, 80, 80);
 
-        c51.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c51.setPreferredSize(new java.awt.Dimension(95, 94));
+        c51.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        c51.setPreferredSize(new java.awt.Dimension(80, 100));
         c51.setRequestFocusEnabled(false);
         jPanel1.add(c51);
-        c51.setBounds(420, 22, 94, 93);
+        c51.setBounds(420, 22, 80, 80);
 
-        c61.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c61.setPreferredSize(new java.awt.Dimension(95, 94));
+        c61.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        c61.setPreferredSize(new java.awt.Dimension(80, 100));
         c61.setRequestFocusEnabled(false);
         jPanel1.add(c61);
-        c61.setBounds(520, 22, 94, 93);
+        c61.setBounds(520, 22, 80, 80);
 
-        c71.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c71.setPreferredSize(new java.awt.Dimension(95, 94));
+        c71.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        c71.setPreferredSize(new java.awt.Dimension(80, 100));
         c71.setRequestFocusEnabled(false);
         jPanel1.add(c71);
-        c71.setBounds(620, 22, 94, 93);
+        c71.setBounds(620, 22, 80, 80);
 
-        c81.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c81.setPreferredSize(new java.awt.Dimension(95, 94));
+        c81.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        c81.setPreferredSize(new java.awt.Dimension(80, 100));
         c81.setRequestFocusEnabled(false);
         jPanel1.add(c81);
-        c81.setBounds(720, 22, 94, 93);
+        c81.setBounds(720, 22, 80, 80);
 
-        c91.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c91.setPreferredSize(new java.awt.Dimension(95, 94));
+        c91.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        c91.setPreferredSize(new java.awt.Dimension(80, 100));
         c91.setRequestFocusEnabled(false);
         jPanel1.add(c91);
-        c91.setBounds(820, 22, 94, 93);
+        c91.setBounds(820, 22, 80, 80);
 
-        c41.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c41.setPreferredSize(new java.awt.Dimension(95, 94));
+        c41.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        c41.setPreferredSize(new java.awt.Dimension(80, 100));
         c41.setRequestFocusEnabled(false);
         jPanel1.add(c41);
-        c41.setBounds(320, 22, 94, 93);
+        c41.setBounds(320, 22, 80, 80);
 
-        c22.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c22.setPreferredSize(new java.awt.Dimension(95, 94));
+        c22.setPreferredSize(new java.awt.Dimension(80, 100));
         c22.setRequestFocusEnabled(false);
         jPanel1.add(c22);
-        c22.setBounds(120, 121, 94, 93);
+        c22.setBounds(120, 121, 80, 80);
 
-        c23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c23.setPreferredSize(new java.awt.Dimension(95, 94));
+        c23.setPreferredSize(new java.awt.Dimension(80, 100));
         c23.setRequestFocusEnabled(false);
         jPanel1.add(c23);
-        c23.setBounds(120, 220, 94, 93);
+        c23.setBounds(120, 220, 80, 80);
 
-        c24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c24.setPreferredSize(new java.awt.Dimension(95, 94));
         c24.setRequestFocusEnabled(false);
         jPanel1.add(c24);
-        c24.setBounds(120, 319, 94, 93);
+        c24.setBounds(120, 319, 80, 80);
 
-        c25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c25.setPreferredSize(new java.awt.Dimension(95, 94));
         c25.setRequestFocusEnabled(false);
         jPanel1.add(c25);
-        c25.setBounds(120, 418, 94, 93);
+        c25.setBounds(120, 418, 80, 80);
 
-        c32.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c32.setPreferredSize(new java.awt.Dimension(95, 94));
+        c32.setPreferredSize(new java.awt.Dimension(80, 100));
         c32.setRequestFocusEnabled(false);
         jPanel1.add(c32);
-        c32.setBounds(220, 121, 94, 93);
+        c32.setBounds(220, 121, 80, 80);
 
-        c33.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c33.setPreferredSize(new java.awt.Dimension(95, 94));
+        c33.setPreferredSize(new java.awt.Dimension(80, 100));
         c33.setRequestFocusEnabled(false);
         jPanel1.add(c33);
-        c33.setBounds(220, 220, 94, 93);
+        c33.setBounds(220, 220, 80, 80);
 
-        c34.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c34.setPreferredSize(new java.awt.Dimension(95, 94));
         c34.setRequestFocusEnabled(false);
         jPanel1.add(c34);
-        c34.setBounds(220, 319, 94, 93);
+        c34.setBounds(220, 319, 80, 80);
 
-        c35.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c35.setPreferredSize(new java.awt.Dimension(95, 94));
         c35.setRequestFocusEnabled(false);
         jPanel1.add(c35);
-        c35.setBounds(220, 418, 94, 93);
+        c35.setBounds(220, 418, 80, 80);
 
-        c42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c42.setPreferredSize(new java.awt.Dimension(95, 94));
+        c42.setPreferredSize(new java.awt.Dimension(80, 100));
         c42.setRequestFocusEnabled(false);
         jPanel1.add(c42);
-        c42.setBounds(320, 121, 94, 93);
+        c42.setBounds(320, 121, 80, 80);
 
-        c43.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c43.setPreferredSize(new java.awt.Dimension(95, 94));
+        c43.setPreferredSize(new java.awt.Dimension(80, 100));
         c43.setRequestFocusEnabled(false);
         jPanel1.add(c43);
-        c43.setBounds(320, 220, 94, 93);
+        c43.setBounds(320, 220, 80, 80);
 
-        c44.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c44.setPreferredSize(new java.awt.Dimension(95, 94));
         c44.setRequestFocusEnabled(false);
         jPanel1.add(c44);
-        c44.setBounds(320, 319, 94, 93);
+        c44.setBounds(320, 319, 80, 80);
 
-        c45.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c45.setPreferredSize(new java.awt.Dimension(95, 94));
         c45.setRequestFocusEnabled(false);
         jPanel1.add(c45);
-        c45.setBounds(320, 418, 94, 93);
+        c45.setBounds(320, 418, 80, 80);
 
-        c52.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c52.setPreferredSize(new java.awt.Dimension(95, 94));
+        c52.setPreferredSize(new java.awt.Dimension(80, 100));
         c52.setRequestFocusEnabled(false);
         jPanel1.add(c52);
-        c52.setBounds(420, 121, 94, 93);
+        c52.setBounds(420, 121, 80, 80);
 
-        c53.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c53.setPreferredSize(new java.awt.Dimension(95, 94));
+        c53.setPreferredSize(new java.awt.Dimension(80, 100));
         c53.setRequestFocusEnabled(false);
         jPanel1.add(c53);
-        c53.setBounds(420, 220, 94, 93);
+        c53.setBounds(420, 220, 80, 80);
 
-        c54.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c54.setPreferredSize(new java.awt.Dimension(95, 94));
         c54.setRequestFocusEnabled(false);
         jPanel1.add(c54);
-        c54.setBounds(420, 319, 94, 93);
+        c54.setBounds(420, 319, 80, 80);
 
-        c55.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c55.setPreferredSize(new java.awt.Dimension(95, 94));
         c55.setRequestFocusEnabled(false);
         jPanel1.add(c55);
-        c55.setBounds(420, 418, 94, 93);
+        c55.setBounds(420, 418, 80, 80);
 
-        c62.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c62.setPreferredSize(new java.awt.Dimension(95, 94));
+        c62.setPreferredSize(new java.awt.Dimension(80, 100));
         c62.setRequestFocusEnabled(false);
         jPanel1.add(c62);
-        c62.setBounds(520, 121, 94, 93);
+        c62.setBounds(520, 121, 80, 80);
 
-        c63.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c63.setPreferredSize(new java.awt.Dimension(95, 94));
+        c63.setPreferredSize(new java.awt.Dimension(80, 100));
         c63.setRequestFocusEnabled(false);
         jPanel1.add(c63);
-        c63.setBounds(520, 220, 94, 93);
+        c63.setBounds(520, 220, 80, 80);
 
-        c64.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c64.setPreferredSize(new java.awt.Dimension(95, 94));
         c64.setRequestFocusEnabled(false);
         jPanel1.add(c64);
-        c64.setBounds(520, 319, 94, 93);
+        c64.setBounds(520, 319, 80, 80);
 
-        c65.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c65.setPreferredSize(new java.awt.Dimension(95, 94));
         c65.setRequestFocusEnabled(false);
         jPanel1.add(c65);
-        c65.setBounds(520, 418, 94, 93);
+        c65.setBounds(520, 418, 80, 80);
 
-        c72.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c72.setPreferredSize(new java.awt.Dimension(95, 94));
+        c72.setPreferredSize(new java.awt.Dimension(80, 100));
         c72.setRequestFocusEnabled(false);
         jPanel1.add(c72);
-        c72.setBounds(620, 121, 94, 93);
+        c72.setBounds(620, 121, 80, 80);
 
-        c73.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c73.setPreferredSize(new java.awt.Dimension(95, 94));
+        c73.setPreferredSize(new java.awt.Dimension(80, 100));
         c73.setRequestFocusEnabled(false);
         jPanel1.add(c73);
-        c73.setBounds(620, 220, 94, 93);
+        c73.setBounds(620, 220, 80, 80);
 
-        c74.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c74.setPreferredSize(new java.awt.Dimension(95, 94));
         c74.setRequestFocusEnabled(false);
         jPanel1.add(c74);
-        c74.setBounds(620, 319, 94, 93);
+        c74.setBounds(620, 319, 80, 80);
 
-        c75.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c75.setPreferredSize(new java.awt.Dimension(95, 94));
         c75.setRequestFocusEnabled(false);
         jPanel1.add(c75);
-        c75.setBounds(620, 418, 94, 93);
+        c75.setBounds(620, 418, 80, 80);
 
-        c82.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c82.setPreferredSize(new java.awt.Dimension(95, 94));
+        c82.setPreferredSize(new java.awt.Dimension(80, 100));
         c82.setRequestFocusEnabled(false);
         jPanel1.add(c82);
-        c82.setBounds(720, 121, 94, 93);
+        c82.setBounds(720, 121, 80, 80);
 
-        c83.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c83.setPreferredSize(new java.awt.Dimension(95, 94));
+        c83.setPreferredSize(new java.awt.Dimension(80, 100));
         c83.setRequestFocusEnabled(false);
         jPanel1.add(c83);
-        c83.setBounds(720, 220, 94, 93);
+        c83.setBounds(720, 220, 80, 80);
 
-        c84.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c84.setPreferredSize(new java.awt.Dimension(95, 94));
         c84.setRequestFocusEnabled(false);
         jPanel1.add(c84);
-        c84.setBounds(720, 319, 94, 93);
+        c84.setBounds(720, 319, 80, 80);
 
-        c85.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c85.setPreferredSize(new java.awt.Dimension(95, 94));
         c85.setRequestFocusEnabled(false);
         jPanel1.add(c85);
-        c85.setBounds(720, 418, 94, 93);
+        c85.setBounds(720, 418, 80, 80);
 
-        c92.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c92.setPreferredSize(new java.awt.Dimension(95, 94));
+        c92.setPreferredSize(new java.awt.Dimension(80, 100));
         c92.setRequestFocusEnabled(false);
         jPanel1.add(c92);
-        c92.setBounds(820, 121, 94, 93);
+        c92.setBounds(820, 121, 80, 80);
 
-        c93.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
-        c93.setPreferredSize(new java.awt.Dimension(95, 94));
+        c93.setPreferredSize(new java.awt.Dimension(80, 100));
         c93.setRequestFocusEnabled(false);
         jPanel1.add(c93);
-        c93.setBounds(820, 220, 94, 93);
+        c93.setBounds(820, 220, 80, 80);
 
-        c94.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c94.setPreferredSize(new java.awt.Dimension(95, 94));
         c94.setRequestFocusEnabled(false);
         jPanel1.add(c94);
-        c94.setBounds(820, 319, 94, 93);
+        c94.setBounds(820, 319, 80, 80);
 
-        c95.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)));
         c95.setPreferredSize(new java.awt.Dimension(95, 94));
         c95.setRequestFocusEnabled(false);
         jPanel1.add(c95);
-        c95.setBounds(820, 418, 94, 93);
+        c95.setBounds(820, 418, 80, 80);
+
+        tableroJ.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tableroJ.setRequestFocusEnabled(false);
         jPanel1.add(tableroJ);
         tableroJ.setBounds(0, 0, 930, 530);
 
@@ -978,7 +945,7 @@ public class JuegoI extends javax.swing.JFrame {
                                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(enviar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addContainerGap(60, Short.MAX_VALUE))
+                        .addContainerGap(76, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(12, 12, 12)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
