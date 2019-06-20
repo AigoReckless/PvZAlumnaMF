@@ -1,7 +1,6 @@
 package presentacion;
 
 import java.awt.Image;
-import java.io.Serializable;
 import javax.swing.ImageIcon;
 
 

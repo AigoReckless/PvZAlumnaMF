@@ -28,8 +28,7 @@ public class IniSesion extends javax.swing.JFrame {
         lecEscr = new Fichero();
         
         initComponents();
-        botonesTransparentes();
-        
+ 
         this.setLocationRelativeTo(this.inicio);
         this.setVisible(true);
         
@@ -37,40 +36,8 @@ public class IniSesion extends javax.swing.JFrame {
         fallo.setIconImage(new ImageIcon("src/images/icono.png").getImage());
         iniS.setIconImage(new ImageIcon("src/images/icono.png").getImage());
         
-        ImageIcon dSure = new ImageIcon("src/images/dialogo2.jpg");
-        ImageIcon sure = new ImageIcon(dSure.getImage().getScaledInstance(dialogo.getWidth(), dialogo.getHeight(),Image.SCALE_DEFAULT));
-        dialogo.setIcon(sure);
-        
-        ImageIcon is = new ImageIcon("src/images/is.jpg");
-        ImageIcon ise = new ImageIcon(is.getImage().getScaledInstance(inise.getWidth(), inise.getHeight(),Image.SCALE_DEFAULT));
-        inise.setIcon(ise);
-        
-        ImageIcon mal = new ImageIcon("src/images/dialogo.jpg");
-        ImageIcon Mal = new ImageIcon(mal.getImage().getScaledInstance(fail.getWidth(), fail.getHeight(),Image.SCALE_DEFAULT));
-        fail.setIcon(Mal);
-        
         lecEscr.leerDatos();
         fallo.setLocationRelativeTo(this);
-    }
-
-    /** Método que permitirá poner los botones de la interfaz transparentes
-     */
-    public void botonesTransparentes(){
-        jButton2.setOpaque(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.setBorderPainted(false);
-        
-        jButton3.setOpaque(false);
-        jButton3.setContentAreaFilled(false);
-        jButton3.setBorderPainted(false);
-        
-        jButton4.setOpaque(false);
-        jButton4.setContentAreaFilled(false);
-        jButton4.setBorderPainted(false);
-        
-        aceptar.setOpaque(false);
-        aceptar.setContentAreaFilled(false);
-        aceptar.setBorderPainted(false);
     }
     
 
@@ -95,6 +62,9 @@ public class IniSesion extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         fail = new javax.swing.JLabel();
+        label1 = new java.awt.Label();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jTextField1 = new javax.swing.JTextField();
         aceptar = new javax.swing.JButton();
         inise = new javax.swing.JLabel();
@@ -161,6 +131,12 @@ public class IniSesion extends javax.swing.JFrame {
         fallo.getContentPane().add(fail);
         fail.setBounds(0, 0, 490, 193);
 
+        label1.setText("label1");
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setAutoRequestFocus(false);
         setMinimumSize(new java.awt.Dimension(678, 427));
@@ -172,7 +148,7 @@ public class IniSesion extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(230, 172, 290, 40);
+        jTextField1.setBounds(220, 60, 220, 40);
 
         aceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -180,14 +156,14 @@ public class IniSesion extends javax.swing.JFrame {
             }
         });
         getContentPane().add(aceptar);
-        aceptar.setBounds(200, 290, 250, 90);
+        aceptar.setBounds(140, 180, 210, 50);
 
         inise.setMaximumSize(new java.awt.Dimension(678, 427));
         inise.setMinimumSize(new java.awt.Dimension(678, 427));
         getContentPane().add(inise);
-        inise.setBounds(0, 0, 678, 427);
+        inise.setBounds(-10, -10, 510, 270);
 
-        setBounds(0, 0, 688, 452);
+        setBounds(0, 0, 485, 311);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -201,12 +177,6 @@ public class IniSesion extends javax.swing.JFrame {
         String dni = jTextField1.getText().toUpperCase();
         if (lecEscr.buscarJugador(dni)!= null){
             Jugador j = lecEscr.buscarJugador(dni);
-            jLabel3.setForeground(Color.white);
-            jLabel3.setFont(new Font("Bauhaus 93", Font.PLAIN, 18));
-            jLabel6.setForeground(Color.white);
-            jLabel6.setFont(new Font("Bauhaus 93", Font.PLAIN, 18));
-            jLabel3.setText("Estas apunto de jugar como: "+ j.getNombre());
-            jLabel6.setText("con DNI: "+ j.getDNI());
             iniS.setLocationRelativeTo(this);
             iniS.setVisible(true);
         }
@@ -257,6 +227,9 @@ public class IniSesion extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
+    private java.awt.Label label1;
     // End of variables declaration//GEN-END:variables
 }
