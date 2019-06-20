@@ -575,235 +575,235 @@ public class JuegoI extends javax.swing.JFrame {
         c11.setPreferredSize(new java.awt.Dimension(80, 100));
         c11.setRequestFocusEnabled(false);
         jPanel1.add(c11);
-        c11.setBounds(20, 22, 80, 80);
+        c11.setBounds(60, 60, 80, 80);
 
         c12.setPreferredSize(new java.awt.Dimension(80, 100));
         c12.setRequestFocusEnabled(false);
         jPanel1.add(c12);
-        c12.setBounds(20, 121, 80, 80);
+        c12.setBounds(60, 150, 80, 80);
 
         c13.setPreferredSize(new java.awt.Dimension(80, 100));
         c13.setRequestFocusEnabled(false);
         jPanel1.add(c13);
-        c13.setBounds(20, 220, 80, 80);
+        c13.setBounds(60, 240, 80, 80);
 
         c14.setPreferredSize(new java.awt.Dimension(95, 94));
         c14.setRequestFocusEnabled(false);
         jPanel1.add(c14);
-        c14.setBounds(20, 319, 80, 80);
+        c14.setBounds(60, 330, 80, 80);
 
         c15.setPreferredSize(new java.awt.Dimension(95, 94));
         c15.setRequestFocusEnabled(false);
         jPanel1.add(c15);
-        c15.setBounds(20, 418, 80, 80);
+        c15.setBounds(60, 420, 80, 80);
 
         c21.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         c21.setPreferredSize(new java.awt.Dimension(80, 100));
         c21.setRequestFocusEnabled(false);
         jPanel1.add(c21);
-        c21.setBounds(120, 22, 80, 80);
+        c21.setBounds(150, 60, 80, 80);
 
         c31.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         c31.setPreferredSize(new java.awt.Dimension(80, 100));
         c31.setRequestFocusEnabled(false);
         jPanel1.add(c31);
-        c31.setBounds(220, 22, 80, 80);
+        c31.setBounds(240, 60, 80, 80);
 
         c51.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         c51.setPreferredSize(new java.awt.Dimension(80, 100));
         c51.setRequestFocusEnabled(false);
         jPanel1.add(c51);
-        c51.setBounds(420, 22, 80, 80);
+        c51.setBounds(420, 60, 80, 80);
 
         c61.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         c61.setPreferredSize(new java.awt.Dimension(80, 100));
         c61.setRequestFocusEnabled(false);
         jPanel1.add(c61);
-        c61.setBounds(520, 22, 80, 80);
+        c61.setBounds(510, 60, 80, 80);
 
         c71.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         c71.setPreferredSize(new java.awt.Dimension(80, 100));
         c71.setRequestFocusEnabled(false);
         jPanel1.add(c71);
-        c71.setBounds(620, 22, 80, 80);
+        c71.setBounds(600, 60, 80, 80);
 
         c81.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         c81.setPreferredSize(new java.awt.Dimension(80, 100));
         c81.setRequestFocusEnabled(false);
         jPanel1.add(c81);
-        c81.setBounds(720, 22, 80, 80);
+        c81.setBounds(690, 60, 80, 80);
 
         c91.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         c91.setPreferredSize(new java.awt.Dimension(80, 100));
         c91.setRequestFocusEnabled(false);
         jPanel1.add(c91);
-        c91.setBounds(820, 22, 80, 80);
+        c91.setBounds(780, 60, 80, 80);
 
         c41.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         c41.setPreferredSize(new java.awt.Dimension(80, 100));
         c41.setRequestFocusEnabled(false);
         jPanel1.add(c41);
-        c41.setBounds(320, 22, 80, 80);
+        c41.setBounds(330, 60, 80, 80);
 
         c22.setPreferredSize(new java.awt.Dimension(80, 100));
         c22.setRequestFocusEnabled(false);
         jPanel1.add(c22);
-        c22.setBounds(120, 121, 80, 80);
+        c22.setBounds(150, 150, 80, 80);
 
         c23.setPreferredSize(new java.awt.Dimension(80, 100));
         c23.setRequestFocusEnabled(false);
         jPanel1.add(c23);
-        c23.setBounds(120, 220, 80, 80);
+        c23.setBounds(150, 240, 80, 80);
 
         c24.setPreferredSize(new java.awt.Dimension(95, 94));
         c24.setRequestFocusEnabled(false);
         jPanel1.add(c24);
-        c24.setBounds(120, 319, 80, 80);
+        c24.setBounds(150, 330, 80, 80);
 
         c25.setPreferredSize(new java.awt.Dimension(95, 94));
         c25.setRequestFocusEnabled(false);
         jPanel1.add(c25);
-        c25.setBounds(120, 418, 80, 80);
+        c25.setBounds(150, 420, 80, 80);
 
         c32.setPreferredSize(new java.awt.Dimension(80, 100));
         c32.setRequestFocusEnabled(false);
         jPanel1.add(c32);
-        c32.setBounds(220, 121, 80, 80);
+        c32.setBounds(240, 150, 80, 80);
 
         c33.setPreferredSize(new java.awt.Dimension(80, 100));
         c33.setRequestFocusEnabled(false);
         jPanel1.add(c33);
-        c33.setBounds(220, 220, 80, 80);
+        c33.setBounds(240, 240, 80, 80);
 
         c34.setPreferredSize(new java.awt.Dimension(95, 94));
         c34.setRequestFocusEnabled(false);
         jPanel1.add(c34);
-        c34.setBounds(220, 319, 80, 80);
+        c34.setBounds(240, 330, 80, 80);
 
         c35.setPreferredSize(new java.awt.Dimension(95, 94));
         c35.setRequestFocusEnabled(false);
         jPanel1.add(c35);
-        c35.setBounds(220, 418, 80, 80);
+        c35.setBounds(240, 420, 80, 80);
 
         c42.setPreferredSize(new java.awt.Dimension(80, 100));
         c42.setRequestFocusEnabled(false);
         jPanel1.add(c42);
-        c42.setBounds(320, 121, 80, 80);
+        c42.setBounds(330, 150, 80, 80);
 
         c43.setPreferredSize(new java.awt.Dimension(80, 100));
         c43.setRequestFocusEnabled(false);
         jPanel1.add(c43);
-        c43.setBounds(320, 220, 80, 80);
+        c43.setBounds(330, 240, 80, 80);
 
         c44.setPreferredSize(new java.awt.Dimension(95, 94));
         c44.setRequestFocusEnabled(false);
         jPanel1.add(c44);
-        c44.setBounds(320, 319, 80, 80);
+        c44.setBounds(330, 330, 80, 80);
 
         c45.setPreferredSize(new java.awt.Dimension(95, 94));
         c45.setRequestFocusEnabled(false);
         jPanel1.add(c45);
-        c45.setBounds(320, 418, 80, 80);
+        c45.setBounds(330, 420, 80, 80);
 
         c52.setPreferredSize(new java.awt.Dimension(80, 100));
         c52.setRequestFocusEnabled(false);
         jPanel1.add(c52);
-        c52.setBounds(420, 121, 80, 80);
+        c52.setBounds(420, 150, 80, 80);
 
         c53.setPreferredSize(new java.awt.Dimension(80, 100));
         c53.setRequestFocusEnabled(false);
         jPanel1.add(c53);
-        c53.setBounds(420, 220, 80, 80);
+        c53.setBounds(420, 240, 80, 80);
 
         c54.setPreferredSize(new java.awt.Dimension(95, 94));
         c54.setRequestFocusEnabled(false);
         jPanel1.add(c54);
-        c54.setBounds(420, 319, 80, 80);
+        c54.setBounds(420, 330, 80, 80);
 
         c55.setPreferredSize(new java.awt.Dimension(95, 94));
         c55.setRequestFocusEnabled(false);
         jPanel1.add(c55);
-        c55.setBounds(420, 418, 80, 80);
+        c55.setBounds(420, 420, 80, 80);
 
         c62.setPreferredSize(new java.awt.Dimension(80, 100));
         c62.setRequestFocusEnabled(false);
         jPanel1.add(c62);
-        c62.setBounds(520, 121, 80, 80);
+        c62.setBounds(510, 150, 80, 80);
 
         c63.setPreferredSize(new java.awt.Dimension(80, 100));
         c63.setRequestFocusEnabled(false);
         jPanel1.add(c63);
-        c63.setBounds(520, 220, 80, 80);
+        c63.setBounds(510, 240, 80, 80);
 
         c64.setPreferredSize(new java.awt.Dimension(95, 94));
         c64.setRequestFocusEnabled(false);
         jPanel1.add(c64);
-        c64.setBounds(520, 319, 80, 80);
+        c64.setBounds(510, 330, 80, 80);
 
         c65.setPreferredSize(new java.awt.Dimension(95, 94));
         c65.setRequestFocusEnabled(false);
         jPanel1.add(c65);
-        c65.setBounds(520, 418, 80, 80);
+        c65.setBounds(510, 420, 80, 80);
 
         c72.setPreferredSize(new java.awt.Dimension(80, 100));
         c72.setRequestFocusEnabled(false);
         jPanel1.add(c72);
-        c72.setBounds(620, 121, 80, 80);
+        c72.setBounds(600, 150, 80, 80);
 
         c73.setPreferredSize(new java.awt.Dimension(80, 100));
         c73.setRequestFocusEnabled(false);
         jPanel1.add(c73);
-        c73.setBounds(620, 220, 80, 80);
+        c73.setBounds(600, 240, 80, 80);
 
         c74.setPreferredSize(new java.awt.Dimension(95, 94));
         c74.setRequestFocusEnabled(false);
         jPanel1.add(c74);
-        c74.setBounds(620, 319, 80, 80);
+        c74.setBounds(600, 330, 80, 80);
 
         c75.setPreferredSize(new java.awt.Dimension(95, 94));
         c75.setRequestFocusEnabled(false);
         jPanel1.add(c75);
-        c75.setBounds(620, 418, 80, 80);
+        c75.setBounds(600, 420, 80, 80);
 
         c82.setPreferredSize(new java.awt.Dimension(80, 100));
         c82.setRequestFocusEnabled(false);
         jPanel1.add(c82);
-        c82.setBounds(720, 121, 80, 80);
+        c82.setBounds(690, 150, 80, 80);
 
         c83.setPreferredSize(new java.awt.Dimension(80, 100));
         c83.setRequestFocusEnabled(false);
         jPanel1.add(c83);
-        c83.setBounds(720, 220, 80, 80);
+        c83.setBounds(690, 240, 80, 80);
 
         c84.setPreferredSize(new java.awt.Dimension(95, 94));
         c84.setRequestFocusEnabled(false);
         jPanel1.add(c84);
-        c84.setBounds(720, 319, 80, 80);
+        c84.setBounds(690, 330, 80, 80);
 
         c85.setPreferredSize(new java.awt.Dimension(95, 94));
         c85.setRequestFocusEnabled(false);
         jPanel1.add(c85);
-        c85.setBounds(720, 418, 80, 80);
+        c85.setBounds(690, 420, 80, 80);
 
         c92.setPreferredSize(new java.awt.Dimension(80, 100));
         c92.setRequestFocusEnabled(false);
         jPanel1.add(c92);
-        c92.setBounds(820, 121, 80, 80);
+        c92.setBounds(780, 150, 80, 80);
 
         c93.setPreferredSize(new java.awt.Dimension(80, 100));
         c93.setRequestFocusEnabled(false);
         jPanel1.add(c93);
-        c93.setBounds(820, 220, 80, 80);
+        c93.setBounds(780, 240, 80, 80);
 
         c94.setPreferredSize(new java.awt.Dimension(95, 94));
         c94.setRequestFocusEnabled(false);
         jPanel1.add(c94);
-        c94.setBounds(820, 319, 80, 80);
+        c94.setBounds(780, 330, 80, 80);
 
         c95.setPreferredSize(new java.awt.Dimension(95, 94));
         c95.setRequestFocusEnabled(false);
         jPanel1.add(c95);
-        c95.setBounds(820, 418, 80, 80);
+        c95.setBounds(780, 420, 80, 80);
 
         tableroJ.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tableroJ.setRequestFocusEnabled(false);
