@@ -39,7 +39,7 @@ public class MenuJuego extends javax.swing.JFrame {
         jFrame2.setIconImage(new ImageIcon("src/images/icono.png").getImage());
         this.setVisible(true);
         
-        ImageIcon indice = new ImageIcon("src/images/indice.jpg");
+        ImageIcon indice = new ImageIcon("src/images/menu.JPG");
         ImageIcon inicio = new ImageIcon(indice.getImage().getScaledInstance(menuJ.getWidth(), menuJ.getHeight(),Image.SCALE_DEFAULT));
         menuJ.setIcon(inicio);
         
