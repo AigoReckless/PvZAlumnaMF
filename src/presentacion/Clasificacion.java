@@ -1,3 +1,4 @@
+
 package presentacion;
 
 import logica.Jugador;
@@ -9,7 +10,14 @@ import javax.swing.ImageIcon;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 
+/**
+ *
+ * 
+ */
 
+/** La clase-interfaz Clasificación nos permitirá visualizar el tablero de clasificaciones
+ * de los jugadores registrados en el juego.
+ */
 public class Clasificacion extends javax.swing.JFrame {
     
     /** Atributo que define la tabla de clasificación*/

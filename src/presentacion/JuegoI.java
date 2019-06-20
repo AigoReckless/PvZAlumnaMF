@@ -297,8 +297,6 @@ public class JuegoI extends javax.swing.JFrame {
         gSBtn = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JToolBar.Separator();
         jButton4 = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JToolBar.Separator();
-        jButton5 = new javax.swing.JButton();
         jLabel23 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -819,14 +817,14 @@ public class JuegoI extends javax.swing.JFrame {
         getContentPane().add(jTextField1);
         jTextField1.setBounds(670, 80, 140, 30);
 
-        enviar.setText("Saltar turno");
+        enviar.setText("Siguiente turno");
         enviar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 enviarActionPerformed(evt);
             }
         });
         getContentPane().add(enviar);
-        enviar.setBounds(820, 80, 100, 30);
+        enviar.setBounds(820, 80, 130, 30);
 
         jLabel2.setFont(new java.awt.Font("DejaVu Sans Mono", 1, 25)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -840,11 +838,11 @@ public class JuegoI extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("DejaVu Sans Mono", 1, 48)); // NOI18N
         jLabel3.setText("1");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(930, 10, 40, 60);
+        jLabel3.setBounds(930, 20, 90, 60);
 
         jToolBar1.setRollover(true);
 
-        gSBtn.setText("Guardar y salir");
+        gSBtn.setText("Guardar");
         gSBtn.setFocusable(false);
         gSBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         gSBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -856,7 +854,7 @@ public class JuegoI extends javax.swing.JFrame {
         jToolBar1.add(gSBtn);
         jToolBar1.add(jSeparator2);
 
-        jButton4.setText("Ayuda");
+        jButton4.setText("Guía");
         jButton4.setFocusable(false);
         jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -866,18 +864,6 @@ public class JuegoI extends javax.swing.JFrame {
             }
         });
         jToolBar1.add(jButton4);
-        jToolBar1.add(jSeparator1);
-
-        jButton5.setText("Reglas");
-        jButton5.setFocusable(false);
-        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jToolBar1.add(jButton5);
 
         getContentPane().add(jToolBar1);
         jToolBar1.setBounds(0, 0, 1052, 25);
@@ -966,14 +952,8 @@ public class JuegoI extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         normas.dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
-    /** Método que, al pulsar "Normas", nos abrirá un cuadro de diálogo con las normas del juego.
-     */
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        normas.setLocationRelativeTo(this);
-        normas.setIconImage(new ImageIcon("src/images/icono.png").getImage());
-        normas.setVisible(true);
-    }//GEN-LAST:event_jButton5ActionPerformed
-    /** Método que, al pulsar "aceptar" dentro del cuadro de diálogo de Ayuda, cerrará el cuadro. 
+
+   /** Método que, al pulsar "aceptar" dentro del cuadro de diálogo de Ayuda, cerrará el cuadro. 
      */
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         ayuda.dispose();
@@ -1179,7 +1159,6 @@ public class JuegoI extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -1220,7 +1199,6 @@ public class JuegoI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JToolBar.Separator jSeparator1;
     private javax.swing.JToolBar.Separator jSeparator2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JToolBar jToolBar1;
