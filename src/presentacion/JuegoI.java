@@ -45,10 +45,7 @@ public class JuegoI extends javax.swing.JFrame {
         initComponents();
         botonesTransparentes();
         actualizarCasillas();
-        progreso();
-        
-        progres.setMaximum(juego.getPartida().getEnemigos());
-        
+                
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         
@@ -64,10 +61,7 @@ public class JuegoI extends javax.swing.JFrame {
         ImageIcon imagen = new ImageIcon(sol.getImage().getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(),Image.SCALE_DEFAULT));
         jLabel1.setIcon(imagen);
         
-        ImageIcon mano = new ImageIcon("src/images/mano.png");
-        ImageIcon zombie = new ImageIcon(mano.getImage().getScaledInstance(jLabel23.getWidth(), jLabel23.getHeight(),Image.SCALE_DEFAULT));
-        jLabel23.setIcon(zombie);
-        
+   
         ImageIcon gano = new ImageIcon("src/images/dialogo.jpg");
         ImageIcon Gano = new ImageIcon(gano.getImage().getScaledInstance(jLabel24.getWidth(), jLabel24.getHeight(),Image.SCALE_DEFAULT));
         jLabel24.setIcon(Gano);
@@ -197,13 +191,7 @@ public class JuegoI extends javax.swing.JFrame {
         
     }
     
-    
-    /** Método que irá rellenando la progress bar a medida que avancen los zombies.
-     */
-    public void progreso(){
-        progres.setValue(juego.getTotalEnemigos());
-    }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -316,7 +304,6 @@ public class JuegoI extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JToolBar.Separator();
         jButton5 = new javax.swing.JButton();
-        progres = new javax.swing.JProgressBar();
         jLabel23 = new javax.swing.JLabel();
 
         gano.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -879,8 +866,6 @@ public class JuegoI extends javax.swing.JFrame {
         });
         jToolBar1.add(jButton5);
 
-        progres.setForeground(new java.awt.Color(107, 228, 21));
-
         jLabel23.setToolTipText("");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -907,22 +892,15 @@ public class JuegoI extends javax.swing.JFrame {
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 933, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(355, 355, 355)
-                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(progres, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(progres, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(13, 13, 13)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 533, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -938,7 +916,7 @@ public class JuegoI extends javax.swing.JFrame {
                                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(enviar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addContainerGap(76, Short.MAX_VALUE))
+                        .addContainerGap(80, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(12, 12, 12)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -958,7 +936,7 @@ public class JuegoI extends javax.swing.JFrame {
         jLabel3.setText(Integer.toString(juego.getPartida().getTurno()));
         jLabel2.setText(Integer.toString(juego.getPartida().getSoles()));
         jTextField1.setText(null);
-        progreso();
+    
         if (juego.getPartida() !=null) if (juego.getTurnosTotales() == juego.getPartida().getTurno()) juego.setFin(true);
         if (juego.isFin()) finWin();
         if (juego.isFinMalo()) finLose();
@@ -1272,7 +1250,6 @@ public class JuegoI extends javax.swing.JFrame {
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JDialog normas;
     private javax.swing.JDialog perdio;
-    private javax.swing.JProgressBar progres;
     private javax.swing.JDialog salir;
     private javax.swing.JDialog salirGuardar;
     private javax.swing.JLabel tableroJ;
