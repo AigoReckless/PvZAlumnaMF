@@ -56,11 +56,7 @@ public class JuegoI extends javax.swing.JFrame {
         gano.setIconImage(new ImageIcon("src/images/icono.png").getImage());
         salir.setIconImage(new ImageIcon("src/images/icono.png").getImage());
         salirGuardar.setIconImage(new ImageIcon("src/images/icono.png").getImage());
-        
-        ImageIcon sol = new ImageIcon("src/images/sol.png");
-        ImageIcon imagen = new ImageIcon(sol.getImage().getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(),Image.SCALE_DEFAULT));
-        jLabel1.setIcon(imagen);
-        
+     
    
         ImageIcon gano = new ImageIcon("src/images/dialogo.jpg");
         ImageIcon Gano = new ImageIcon(gano.getImage().getScaledInstance(jLabel24.getWidth(), jLabel24.getHeight(),Image.SCALE_DEFAULT));
@@ -246,7 +242,6 @@ public class JuegoI extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jButton12 = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         c11 = new javax.swing.JLabel();
         c12 = new javax.swing.JLabel();
@@ -305,6 +300,8 @@ public class JuegoI extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JToolBar.Separator();
         jButton5 = new javax.swing.JButton();
         jLabel23 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         gano.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         gano.setMinimumSize(new java.awt.Dimension(490, 193));
@@ -566,6 +563,7 @@ public class JuegoI extends javax.swing.JFrame {
                 formWindowClosing(evt);
             }
         });
+        getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 0));
         jPanel1.setPreferredSize(new java.awt.Dimension(950, 520));
@@ -810,24 +808,39 @@ public class JuegoI extends javax.swing.JFrame {
         jPanel1.add(tableroJ);
         tableroJ.setBounds(0, 0, 930, 530);
 
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(109, 121, 933, 533);
+
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(670, 80, 140, 30);
 
-        enviar.setText("Enviar");
+        enviar.setText("Saltar turno");
         enviar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 enviarActionPerformed(evt);
             }
         });
+        getContentPane().add(enviar);
+        enviar.setBounds(820, 80, 100, 30);
 
-        jLabel2.setFont(new java.awt.Font("DejaVu Sans Mono", 1, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("DejaVu Sans Mono", 1, 25)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("1");
+        jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jLabel2.setInheritsPopupMenu(false);
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(60, 90, 170, 70);
 
         jLabel3.setFont(new java.awt.Font("DejaVu Sans Mono", 1, 48)); // NOI18N
         jLabel3.setText("1");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(930, 10, 40, 60);
 
         jToolBar1.setRollover(true);
 
@@ -866,62 +879,24 @@ public class JuegoI extends javax.swing.JFrame {
         });
         jToolBar1.add(jButton5);
 
-        jLabel23.setToolTipText("");
+        getContentPane().add(jToolBar1);
+        jToolBar1.setBounds(0, 0, 1052, 25);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(34, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(165, 165, 165)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(49, 49, 49)
-                .addComponent(enviar)
-                .addGap(202, 202, 202)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(96, 96, 96))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 933, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(355, 355, 355)
-                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(13, 13, 13)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 533, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(25, 25, 25)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(enviar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addContainerGap(80, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
+        jLabel23.setToolTipText("");
+        getContentPane().add(jLabel23);
+        jLabel23.setBounds(979, 59, 63, 53);
+
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tablero2.png"))); // NOI18N
+        jLabel36.setLabelFor(jLabel2);
+        jLabel36.setRequestFocusEnabled(false);
+        jLabel36.setVerifyInputWhenFocusTarget(false);
+        getContentPane().add(jLabel36);
+        jLabel36.setBounds(110, 30, 457, 90);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setText("Turno:");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(850, 30, 110, 40);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1237,6 +1212,7 @@ public class JuegoI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
