@@ -47,8 +47,7 @@ public class MenuJuego extends javax.swing.JFrame {
         ImageIcon dif = new ImageIcon(dDif.getImage().getScaledInstance(dificultad.getWidth(), dificultad.getHeight(),Image.SCALE_DEFAULT));
         dificultad.setIcon(dif);
         
-        if(J.getPartidaNoFin()!= null)continuar.setVisible(true);
-        else continuar.setVisible(false);
+       
         
 
     }
@@ -71,11 +70,7 @@ public class MenuJuego extends javax.swing.JFrame {
         NuevoDoc.setOpaque(false);
         NuevoDoc.setContentAreaFilled(false);
         NuevoDoc.setBorderPainted(false);
-        
-        continuar.setOpaque(false);
-        continuar.setContentAreaFilled(false);
-        continuar.setBorderPainted(false);
-        
+       
         jButton3.setOpaque(false);
         jButton3.setContentAreaFilled(false);
         jButton3.setBorderPainted(false);
@@ -118,7 +113,6 @@ public class MenuJuego extends javax.swing.JFrame {
         Clasificacion = new javax.swing.JButton();
         NuevoJ = new javax.swing.JButton();
         NuevoDoc = new javax.swing.JButton();
-        continuar = new javax.swing.JButton();
         menuJ = new javax.swing.JLabel();
 
         jDialog1.setMinimumSize(new java.awt.Dimension(490, 193));
@@ -208,10 +202,10 @@ public class MenuJuego extends javax.swing.JFrame {
             }
         });
         clasificacion.addInputMethodListener(new java.awt.event.InputMethodListener() {
-            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
-            }
             public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
                 clasificacionInputMethodTextChanged(evt);
+            }
+            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
             }
         });
 
@@ -249,6 +243,7 @@ public class MenuJuego extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1078, 744));
+        setSize(new java.awt.Dimension(1024, 768));
         getContentPane().setLayout(null);
 
         CambiarUsuario.setBackground(new java.awt.Color(14, 113, 236));
@@ -260,7 +255,7 @@ public class MenuJuego extends javax.swing.JFrame {
             }
         });
         getContentPane().add(CambiarUsuario);
-        CambiarUsuario.setBounds(550, 350, 370, 82);
+        CambiarUsuario.setBounds(10, 100, 370, 110);
 
         Clasificacion.setBackground(new java.awt.Color(14, 113, 236));
         Clasificacion.setFont(new java.awt.Font("DejaVu Sans Mono", 1, 36)); // NOI18N
@@ -271,7 +266,7 @@ public class MenuJuego extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Clasificacion);
-        Clasificacion.setBounds(520, 260, 410, 82);
+        Clasificacion.setBounds(580, 252, 480, 110);
 
         NuevoJ.setFont(new java.awt.Font("DejaVu Sans Mono", 1, 36)); // NOI18N
         NuevoJ.setForeground(new java.awt.Color(254, 254, 254));
@@ -281,7 +276,7 @@ public class MenuJuego extends javax.swing.JFrame {
             }
         });
         getContentPane().add(NuevoJ);
-        NuevoJ.setBounds(530, 130, 410, 100);
+        NuevoJ.setBounds(520, 110, 410, 100);
 
         NuevoDoc.setBackground(new java.awt.Color(14, 113, 236));
         NuevoDoc.setFont(new java.awt.Font("DejaVu Sans Mono", 1, 36)); // NOI18N
@@ -292,19 +287,12 @@ public class MenuJuego extends javax.swing.JFrame {
             }
         });
         getContentPane().add(NuevoDoc);
-        NuevoDoc.setBounds(550, 440, 340, 70);
+        NuevoDoc.setBounds(520, 510, 530, 90);
 
-        continuar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/continuar.png"))); // NOI18N
-        continuar.setFocusable(false);
-        continuar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                continuarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(continuar);
-        continuar.setBounds(760, 590, 110, 50);
+        menuJ.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        menuJ.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         getContentPane().add(menuJ);
-        menuJ.setBounds(0, 0, 1080, 720);
+        menuJ.setBounds(-10, -10, 1100, 740);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -447,18 +435,6 @@ public class MenuJuego extends javax.swing.JFrame {
     private void clasificacionInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_clasificacionInputMethodTextChanged
         // TODO add your handling code here:
     }//GEN-LAST:event_clasificacionInputMethodTextChanged
-    /** Método que, al pulsar el botón continuar (solo aparece cuando hay una partida guardada), nos llevará
-     * de vuelta al juego en el punto en el que lo habíamos dejado
-     */
-    private void continuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_continuarActionPerformed
-        juego.setPartida(juego.getJugador().getPartidaNoFin());
-        try {
-            JuegoI ij = new JuegoI(juego);
-        } catch (IOException | ClassNotFoundException ex) {
-            Logger.getLogger(MenuJuego.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        this.setVisible(false);
-    }//GEN-LAST:event_continuarActionPerformed
 
     
 
@@ -468,7 +444,6 @@ public class MenuJuego extends javax.swing.JFrame {
     private javax.swing.JButton NuevoDoc;
     private javax.swing.JButton NuevoJ;
     private javax.swing.JTable clasificacion;
-    private javax.swing.JButton continuar;
     private javax.swing.JLabel dificultad;
     private javax.swing.JFileChooser fc;
     private javax.swing.JButton jButton3;
