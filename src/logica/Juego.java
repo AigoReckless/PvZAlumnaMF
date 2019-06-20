@@ -1,8 +1,11 @@
 package logica;
 
-
 import java.io.Serializable;
 
+/**
+ * 
+ * @author Marina Fernández
+ */
 public class Juego implements Serializable{
     /** Atributo para controlar los comandos introducidos por teclado de la partida*/
     private Comandos comandos;
@@ -122,8 +125,8 @@ public class Juego implements Serializable{
         if (j.getPartida() != null){
                 if (turnoAnt != j.getPartida().getTurno()){
                     turnoAnt = j.getPartida().getTurno();
-                    for (int i =0; i< j.getPartida().getTablero().lonY();i++){
-                        for (int p =0 ; p < j.getPartida().getTablero().lonX() ; p++){
+                    for (int i =0; i< j.getPartida().getTablero().loncolumna();i++){
+                        for (int p =0 ; p < j.getPartida().getTablero().lonfila() ; p++){
                             if (j.getPartida().getTablero().getTableroPos(p+1, i+1) != null && !j.getPartida().getTablero().getTableroPos(p+1, i+1).borrar()){
                                 j.getPartida().getTablero().getTableroPos(p+1, i+1).setTurnos(j.getPartida().getTablero().getTableroPos(p+1, i+1).getTurnos()+1);
                                 j.getPartida().getTablero().getTableroPos(p+1, i+1).actua(j);
@@ -134,11 +137,11 @@ public class Juego implements Serializable{
                         }
                     }
                     if (getPartida().getTurno()>getPartida().getTurnoInicial() && totalEnemigos < getPartida().getEnemigos() ){
-                        int zombiesRonda = (int) (Math.random() * getPartida().getTablero().lonY());
+                        int zombiesRonda = (int) (Math.random() * getPartida().getTablero().loncolumna());
                         int zombiesGenerados=0;
                         int tipoZombie = (int) (Math.random()*3+1);
                         for (int i = 0; i<zombiesRonda; i++){
-                            int pos =(int) (Math.random() * getPartida().getTablero().lonY()) + 1;
+                            int pos =(int) (Math.random() * getPartida().getTablero().loncolumna()) + 1;
                             Zombies z ;
                             switch (tipoZombie) {
                                 case 1:
@@ -152,9 +155,9 @@ public class Juego implements Serializable{
                                     break;
                             }
                             
-                            if (getPartida().getTablero().getTableroPos(getPartida().getTablero().lonX(),pos) == null){
-                                getPartida().getTablero().addT(getPartida().getTablero().lonX(), pos, z);
-                                z.setX(getPartida().getTablero().lonX());
+                            if (getPartida().getTablero().getTableroPos(getPartida().getTablero().lonfila(),pos) == null){
+                                getPartida().getTablero().addT(getPartida().getTablero().lonfila(), pos, z);
+                                z.setX(getPartida().getTablero().lonfila());
                                 z.setY(pos);
                                 zombiesGenerados++;
                             }
@@ -162,7 +165,7 @@ public class Juego implements Serializable{
                         totalEnemigos += zombiesGenerados;
                     }                      
                 }
-                for(int i = 1; i<=j.getPartida().getTablero().lonY();i++){
+                for(int i = 1; i<=j.getPartida().getTablero().loncolumna();i++){
                     if (j.getPartida().getTablero().getTableroPos(1, i) != null && j.getPartida().getTablero().getTableroPos(1, i) instanceof Zombies){
                         j.setFinMalo(true);
                     }

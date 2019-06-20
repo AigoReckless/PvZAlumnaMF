@@ -8,7 +8,7 @@ import logica.LanzaGuisantes;
 import logica.Deportista;
 import logica.Girasol;
 import logica.Juego;
-import logica.LecturaEscritura;
+import logica.Fichero;
 import logica.Tablero;
 import java.awt.Image;
 import java.io.FileNotFoundException;
@@ -26,7 +26,7 @@ public class JuegoI extends javax.swing.JFrame {
     /** Atributo que creará un tablero en interfaz.*/
     private JLabel[][] tableroI;
     /** Atributo que permite leer los datos del jugador.*/
-    private LecturaEscritura le;
+    private Fichero le;
     
     /** Constructor de JuegoI
      * @param j partida en curso
@@ -38,7 +38,7 @@ public class JuegoI extends javax.swing.JFrame {
     public JuegoI(Juego j) throws IOException, FileNotFoundException, ClassNotFoundException {
         juego = j;
         tableroI = new JLabel[5][9];
-        le= new LecturaEscritura();
+        le= new Fichero();
         le.leerDatos();
         juego.setTotalEnemigos(juego.getPartida().getEnemigosAparecidos());
         
@@ -1106,8 +1106,8 @@ public class JuegoI extends javax.swing.JFrame {
     public void actualizarCasillas(){
         rellenar();
         Tablero t = juego.getPartida().getTablero();
-        for (int i = 0; i<t.lonY();i++){
-            for (int j = 0 ;j<t.lonX();j++){
+        for (int i = 0; i<t.loncolumna();i++){
+            for (int j = 0 ;j<t.lonfila();j++){
                 if (t.getTableroPos(j+1, i+1)!= null){
                     if (t.getTableroPos(j+1, i+1) instanceof Girasol ){
                         ImageIcon f = new ImageIcon("src/images/girasol.png");

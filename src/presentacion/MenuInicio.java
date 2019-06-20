@@ -1,6 +1,6 @@
 package presentacion;
 
-import logica.LecturaEscritura;
+import logica.Fichero;
 import java.awt.Image;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -12,7 +12,7 @@ import javax.swing.ImageIcon;
 public class MenuInicio extends javax.swing.JFrame {
     
     /** Atributo que permitirá leer y registrar los datos del jugador*/
-    private LecturaEscritura lecEscr;
+    private Fichero lecEscr;
     
     /** Constructor de Menú Inicio
      */

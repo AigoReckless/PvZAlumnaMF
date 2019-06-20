@@ -1,6 +1,6 @@
 package presentacion;
 import logica.Jugador;
-import logica.LecturaEscritura;
+import logica.Fichero;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
@@ -14,7 +14,7 @@ import javax.swing.ImageIcon;
 
 public class Registro extends javax.swing.JFrame {
     /** Atributo que permite leer y guardar los datos del jugador */
-    private LecturaEscritura lecEscr ;
+    private Fichero lecEscr ;
     /** Atributo que relaciona ciertos componentes del inicio con la interfaz */
     private MenuInicio inicio;
     
@@ -28,7 +28,7 @@ public class Registro extends javax.swing.JFrame {
      */
     public Registro(MenuInicio inicio) throws IOException, FileNotFoundException, ClassNotFoundException {
         this.inicio = inicio;
-        lecEscr = new LecturaEscritura();
+        lecEscr = new Fichero();
         
         initComponents();
         botonesTransparentes();

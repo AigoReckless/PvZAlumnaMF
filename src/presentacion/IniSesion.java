@@ -1,7 +1,7 @@
 package presentacion;
 
 import logica.Jugador;
-import logica.LecturaEscritura;
+import logica.Fichero;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
@@ -14,7 +14,7 @@ public class IniSesion extends javax.swing.JFrame {
     /** Atributo que relaciona ciertos componentes del inicio con la interfaz*/
     private MenuInicio inicio;
     /** Atributo que permite leer los datos del jugador*/
-    private LecturaEscritura lecEscr;
+    private Fichero lecEscr;
     
     /** Constructor de IniSesión
      * @param inicio pantalla de inicio
@@ -25,7 +25,7 @@ public class IniSesion extends javax.swing.JFrame {
      */
     public IniSesion( MenuInicio inicio) throws IOException, FileNotFoundException, ClassNotFoundException {
         this.inicio = inicio;
-        lecEscr = new LecturaEscritura();
+        lecEscr = new Fichero();
         
         initComponents();
         botonesTransparentes();

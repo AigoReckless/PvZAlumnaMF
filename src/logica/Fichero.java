@@ -9,14 +9,14 @@ import java.io.ObjectOutputStream;
 import java.util.HashMap;
 
 
-public class LecturaEscritura {
+public class Fichero {
     
     /** Atributo que controla los jugadores registrados en el juego
      */
     private HashMap<String, Jugador> jugadores ;
     
     /** Constructor de LecturaEscritura*/
-    public LecturaEscritura() {
+    public Fichero() {
         jugadores = new HashMap<>();
     }
     

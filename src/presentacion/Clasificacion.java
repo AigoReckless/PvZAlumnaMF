@@ -1,7 +1,7 @@
 package presentacion;
 
 import logica.Jugador;
-import logica.LecturaEscritura;
+import logica.Fichero;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Map;
@@ -15,7 +15,7 @@ public class Clasificacion extends javax.swing.JFrame {
     /** Atributo que define la tabla de clasificación*/
     DefaultTableModel dtm = new DefaultTableModel();
     /** Atributo que permite leer los datos del jugador*/
-    LecturaEscritura le ;
+    Fichero le ;
     
     /** Constructor de Clasifiación
       * @throws java.io.FileNotFoundException señala que un intento de abrir el archivo
@@ -24,7 +24,7 @@ public class Clasificacion extends javax.swing.JFrame {
          * nombre de cadena usando ciertos métodos de los cuales no se puede encontrar una para la clase con el nombre especificado.
      */
     public Clasificacion() throws IOException, FileNotFoundException, ClassNotFoundException {
-        le = new LecturaEscritura();
+        le = new Fichero();
         le.leerDatos();
         initComponents();
         this.setIconImage(new ImageIcon("src/images/icono.png").getImage());

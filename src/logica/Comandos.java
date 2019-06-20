@@ -1,17 +1,21 @@
 package logica;
 
-
 import java.io.Serializable;
 import presentacion.ExcepcionesJ;
 
-
 public class Comandos implements Serializable{
-    
+//Convierte un objeto en en una secuencia de bytes que pueden ser posteriormente leídos para restaurar el objeto original
 
-    /** Constructor de Comandos*/
+    /**
+     * Constructor de la clase Comandos
+     */
     public Comandos() {
+        
     }
 
+    
+    
+    
     /** Método que pondrá todos los comandos introducidos por teclado en mayúscula
      * @param comando el comando introducido por el usuario
      * @return dicho comando en mayúscula

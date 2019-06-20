@@ -59,7 +59,7 @@ public abstract class Plantas extends Objetos {
      * @param j partida en curso
      */
     public void colocarPlanta(int x, int y,Juego j) {
-        if (getExcepcion().dentroTablero(x, y, j.getPartida().getTablero().lonX(), j.getPartida().getTablero().lonY()) && getExcepcion().casillaOcupada( j.getPartida().getTablero().getTableroPos(x, y)) && getExcepcion().costePosible(this.getCoste(), j.getPartida().getSoles())){
+        if (getExcepcion().dentroTablero(x, y, j.getPartida().getTablero().lonfila(), j.getPartida().getTablero().loncolumna()) && getExcepcion().casillaOcupada( j.getPartida().getTablero().getTableroPos(x, y)) && getExcepcion().costePosible(this.getCoste(), j.getPartida().getSoles())){
             j.getPartida().getTablero().addT(x, y, this);        
             j.getPartida().setSoles(j.getPartida().getSoles()-getCoste());
             j.getPartida().setTurno(j.getPartida().getTurno()+1);    
